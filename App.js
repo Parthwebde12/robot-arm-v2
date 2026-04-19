@@ -151,11 +151,9 @@ export default function App() {
       
       {renderCameraOrFallback()}
       
-      {/* Side HUD Elements */}
       <TelemetryData />
       <SystemStatus />
 
-      {/* Top HUD */}
       <BlurView intensity={80} tint="dark" style={styles.topHud}>
         <View style={styles.statusGroup}>
           <View style={styles.statusIndicator}>

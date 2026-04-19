@@ -4,7 +4,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { RobotConnection } from '../api/RobotConnection';
 
-// Animated D-Pad Button
 const DPadButton = ({ icon, onPressIn, onPressOut, direction }) => {
   const scale = useRef(new Animated.Value(1)).current;
 
@@ -63,7 +62,6 @@ export const ControlPad = () => {
   const handleStop = () => RobotConnection.stopAll();
   const handleGripper = (state) => RobotConnection.setGripper(state);
 
-  // Decorative pulsing pivot
   const pivotGlow = useRef(new Animated.Value(0.3)).current;
   useEffect(() => {
     Animated.loop(
@@ -77,7 +75,6 @@ export const ControlPad = () => {
   return (
     <View style={styles.container} pointerEvents="box-none">
       
-      {/* Left Pad - Base and Shoulder (D-PAD) */}
       <BlurView intensity={60} tint="dark" style={styles.panelLeft}>
         <Text style={styles.panelTitle}>BASE / SHOULDER</Text>
         
@@ -98,7 +95,6 @@ export const ControlPad = () => {
         </View>
       </BlurView>
 
-      {/* Right Pad - Elbow and Gripper (Action Buttons) */}
       <BlurView intensity={60} tint="dark" style={styles.panelRight}>
         <Text style={styles.panelTitle}>MANIPULATOR</Text>
         
@@ -156,7 +152,6 @@ const styles = StyleSheet.create({
     textShadowRadius: 10,
   },
   
-  /* D-PAD STYLES */
   dpadContainer: {
     alignItems: 'center',
     justifyContent: 'center',
