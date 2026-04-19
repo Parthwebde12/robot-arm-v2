@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(0, 243, 255, 0.25)',
     overflow: 'hidden',
     alignItems: 'center',
-    width: '45%',
+    width: '30%',  //change the size of panel from here
   },
   panelRight: {
     backgroundColor: 'rgba(5, 10, 15, 0.4)',
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(0, 243, 255, 0.25)',
     overflow: 'hidden',
     alignItems: 'center',
-    width: '48%',
+    width: '30%', //change the size of both panel from here
   },
   panelTitle: {
     color: '#00f3ff',
