@@ -5,6 +5,9 @@ import { BlurView } from 'expo-blur';
 import { Ionicons } from '@expo/vector-icons';
 import { ControlPad } from './src/components/ControlPad';
 
+//improve the structure
+
+
 
 const TelemetryData = () => {
   const [data, setData] = useState({ x: 0, y: 0, z: 0, pitch: 0 });
