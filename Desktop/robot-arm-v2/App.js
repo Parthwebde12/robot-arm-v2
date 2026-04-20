@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   
   telemetryContainer: {
     position: 'absolute',
-    top: 100,
+    top: 1200,
     left: 20,
     zIndex: 5,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
