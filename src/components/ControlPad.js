@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
-// import { RobotConnection } from '../api/RobotConnection';
+import { RobotConnection } from '../api/RobotConnection';`1`
 
 const DPadButton = ({ icon, onPressIn, onPressOut, direction }) => {
   const scale = useRef(new Animated.Value(1)).current;
